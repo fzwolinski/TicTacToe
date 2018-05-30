@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Tic Tac Toe game that will take you away from reality for hours">
+    <meta name="author" content="Fabian Zwoliński">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="styles/fontello.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link type="text/css" media='(max-width: 1260px)' rel='stylesheet' href='styles/responsive.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+    <body>
+      <div id="container">
+          <div id="start-page" class="noselect">
+              Let's play a game
+          </div>
+          <div id="choose-mode" class="noselect">
+            <div id="pvp"><img src="img/pvp.png" alt="Player vs Player"></div>
+            <div id="pvc"><img src="img/pvc.png" alt="Player vs Computer"></div>
+          </div> 
+        <div id="board">
+          <div class="frame">
+            <div class="field 0 noselect"><div class="field-content"></div></div>
+            <div class="field 1 noselect"><div class="field-content"></div></div>
+            <div class="field 2 noselect"><div class="field-content"></div></div>
+          </div>
+          <div class="frame">
+            <div class="field 3 noselect"><div class="field-content"></div></div>
+            <div class="field 4 noselect"><div class="field-content"></div></div>
+            <div class="field 5 noselect"><div class="field-content"></div></div>
+          </div>
+          <div class="frame">
+            <div class="field 6 noselect"><div class="field-content"></div></div>
+            <div class="field 7 noselect"><div class="field-content"></div></div>
+            <div class="field 8 noselect"><div class="field-content"></div></div>
+          </div>
+        </div>
+        <div id="player-panel" class="noselect"></div>
+    </div>
+    <div id="show-hide-restart-game"><i class="icon-down-open-big"></i></div>
+    <div class="noselect" id="change-mode">Change Mode</div>
+    <div class="noselect" id="restart-game">Restart Game</div>
+    <script src="scripts/Main.js"></script>
+    <script src="scripts/Game.js"></script>
+  </body>
+</html>

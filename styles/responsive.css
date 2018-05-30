@@ -1,0 +1,773 @@
+html,
+body {
+    min-height: 500px;
+}
+#board {
+    width: 450px;
+    height: 450px;
+}
+
+#player-panel {
+    width: 450px;
+    height: 250px;
+    line-height: 250px;
+}
+
+@media (max-width: 1200px) {
+    #start-page {
+        font-size: 110px;
+    }
+}
+
+@media (max-width: 1150px) {
+    #start-page {
+        font-size: 100px;
+    }
+
+    #board {
+        width: 430px;
+        height: 430px;
+    }
+    
+    .animated-cross:after {
+        width: 120px;
+        height: 8px;
+    }
+      
+    .animated-cross:before {
+        width: 120px;
+        height: 8px;
+    }
+
+    @keyframes circle {
+        0% {
+          width: 0px;
+          height: 0px;
+          border: 8px solid rgba(255, 254, 101, .01);
+        }
+        
+        50% {
+          border: 8px solid rgba(255, 254, 101, .1);
+        }
+        
+        100% {
+          border: 8px solid rgba(255, 254, 101, 1);
+          visibility: visible;
+          width: 86px;
+          height: 86px;
+        }
+    }
+
+
+    #player-panel {
+        width: 430px;
+        height: 230px;
+        line-height: 230px;
+    }
+
+    #restart-game,
+    #change-mode {
+        width: 320px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 45px;
+    }
+
+    @keyframes restart-game-animation {
+        0% {
+          top: -180px;
+        }
+        100% {
+          top: 102px;
+        }
+      }
+    @keyframes show-hide-restart-game-animation {
+        0% {
+            top: 0;
+            transform: rotate(0deg);
+        }
+        100% {
+            top: 205px;
+            transform: rotate(180deg);
+        }
+    }
+}
+
+@media (max-width: 1010px) { 
+    html,
+    body {
+        min-height: 700px;
+    }
+
+    #container {
+        padding-top: 0;
+        height: 80%;
+    }
+
+    .field:after {
+        width: 90%;
+        height: 90%;
+    }
+
+    .field:hover:after {
+        background: unset;
+      }
+
+      
+    #restart-game:hover,
+    #change-mode:hover {
+        background: #66661b;
+    }
+
+    .animated-cross:after {
+        width: 150px;
+        height: 8px;
+    }
+      
+    .animated-cross:before {
+        width: 150px;
+        height: 8px;
+    }
+
+    @keyframes circle {
+        0% {
+          width: 0px;
+          height: 0px;
+          border: 7px solid rgba(255, 254, 101, .01);
+        }
+        
+        50% {
+          border: 7px solid rgba(255, 254, 101, .1);
+        }
+        
+        100% {
+          border: 7px solid rgba(255, 254, 101, 1);
+          visibility: visible;
+          width: 105px;
+          height: 105px;
+        }
+    }
+
+    #board {
+        width: 550px;
+        height: 550px;
+    }
+
+    #show-hide-restart-game {
+        display: none;
+    }
+
+    #change-mode,
+    #restart-game,
+    #player-panel
+    {
+        position: fixed;
+        bottom: 0px;
+        top: unset;
+        left: unset;
+        width: 33.3%;
+        height: 20%;
+        transform: none;
+        font-size: 6vh;
+        padding: 0 10px;
+        line-height: unset;
+        border: 0;
+        background: #66661b;
+        box-sizing: border-box;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    #player-panel {
+        left: 0px;
+        font-size: 20vh;
+    }
+
+    #change-mode {
+        border-left: 2px solid #FFFE20;
+        border-right: 2px solid #FFFE20;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    #restart-game {
+        right: 0px;
+    }
+}
+
+@media (max-width: 950px) {
+
+    html,
+    body {
+        min-height: 620px;
+    }
+
+    #choose-mode {
+        flex-direction: column;
+        justify-content: unset;
+        overflow: auto;
+    }
+
+    #pvp,
+    #pvc {
+      width: 40%;
+    }
+
+    #container {
+        height: 85%;
+    }
+
+    #board {
+        width: 500px;
+        height: 500px;
+    }
+    
+    #change-mode,
+    #restart-game,
+    #player-panel
+    {
+        height: 15%;
+        font-size: 5.5vh;
+    }   
+
+    #player-panel {
+        font-size: 16vh;
+    }
+}
+
+@media (max-width: 900px) {
+    #start-page {
+        box-sizing: border-box;
+        padding: 0 100px;
+        font-size: 120px;
+    }
+
+    #pvp,
+    #pvc {
+      width: 45%;
+    }
+}
+
+@media (max-width: 870px) {
+
+    .animated-cross:after {
+        width: 130px;
+        height: 8px;
+    }
+      
+    .animated-cross:before {
+        width: 130px;
+        height: 8px;
+    }
+
+    @keyframes circle {
+        0% {
+          width: 0px;
+          height: 0px;
+          border: 7px solid rgba(255, 254, 101, .01);
+        }
+        
+        50% {
+          border: 7px solid rgba(255, 254, 101, .1);
+        }
+        
+        100% {
+          border: 7px solid rgba(255, 254, 101, 1);
+          visibility: visible;
+          width: 92px;
+          height: 92px;
+        }
+    }
+
+    #change-mode,
+    #restart-game {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding: 0 15px;
+        line-height: unset;
+    }
+}
+
+@media (max-width: 800px) {
+    #start-page {
+        padding: 0 90px;
+        font-size: 110px;
+    }
+}
+
+@media (max-width: 770px) { 
+    #start-page {
+        padding: 0 70px;
+        font-size: 90px;
+    }
+    #pvp,
+    #pvc {
+      width: 50%;
+    }
+}
+
+@media (max-width: 670px) {
+
+    html,
+    body {
+        min-height: 580px;
+    }
+
+    .animated-cross:after {
+        width: 120px;
+        height: 8px;
+    }
+      
+    .animated-cross:before {
+        width: 120px;
+        height: 8px;
+    }
+
+    @keyframes circle {
+        0% {
+          width: 0px;
+          height: 0px;
+          border: 7px solid rgba(255, 254, 101, .01);
+        }
+        
+        50% {
+          border: 7px solid rgba(255, 254, 101, .1);
+        }
+        
+        100% {
+          border: 7px solid rgba(255, 254, 101, 1);
+          visibility: visible;
+          width: 86px;
+          height: 86px;
+        }
+    }
+
+    #board {
+        width: 450px;
+        height: 450px;
+    }
+
+    #player-panel {
+        font-size: 14vh;
+    }
+
+    #pvp,
+    #pvc {
+      width: 60%;
+    }
+} 
+
+@media (max-width: 580px) {
+    html,
+    body {
+        min-height: 685px;
+    }
+
+    #start-page {
+        padding: 0 50px;
+        font-size: 80px;
+    }
+
+    .animated-cross:after {
+        width: 105px;
+        height: 8px;
+    }
+      
+    .animated-cross:before {
+        width: 105px;
+        height: 8px;
+    }
+
+    @keyframes circle {
+        0% {
+          width: 0px;
+          height: 0px;
+          border: 7px solid rgba(255, 254, 101, .01);
+        }
+        
+        50% {
+          border: 7px solid rgba(255, 254, 101, .1);
+        }
+        
+        100% {
+          border: 7px solid rgba(255, 254, 101, 1);
+          visibility: visible;
+          width: 73px;
+          height: 73px;
+        }
+    }
+
+    #container {
+        height: 87%;
+        padding-top: 160px;
+        box-sizing: border-box;
+    }
+
+    #board {
+        width: 400px;
+        height: 400px;
+    }
+
+    #player-panel {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: unset;
+        font-size: 100px;
+        background: none;
+        border: 1px solid #FFFE20;
+        width: 400px;
+        height: 150px;
+    }
+
+    #change-mode {
+        left: 0;
+        transform: none;
+        border-left: 0;
+        border-right: 1px solid #FFFE20; 
+    }
+
+    #restart-game { 
+        right: 0;
+        border-right: 0;
+        border-left: 1px solid #FFFE20; 
+    }
+
+    #change-mode,
+    #restart-game {
+        width: 50%;
+        font-size: 5vh;
+        height: 13%;
+    }
+}
+
+@media (max-width: 480px) { 
+    #start-page {
+        font-size: 70px;
+    }
+    
+    #pvp,
+    #pvc {
+      width: 65%;
+    }
+}
+
+@media (max-width: 440px) {
+    html,
+    body {
+        min-height: 644px;
+    }
+
+    #start-page {
+        font-size: 60px;
+    }
+
+    .animated-cross:after {
+        width: 90px;
+        height: 8px;
+    }
+      
+    .animated-cross:before {
+        width: 90px;
+        height: 8px;
+    }
+
+    @keyframes circle {
+        0% {
+          width: 0px;
+          height: 0px;
+          border: 7px solid rgba(255, 254, 101, .01);
+        }
+        
+        50% {
+          border: 7px solid rgba(255, 254, 101, .1);
+        }
+        
+        100% {
+          border: 7px solid rgba(255, 254, 101, 1);
+          visibility: visible;
+          width: 61px;
+          height: 61px;
+        }
+    }
+
+    #player-panel {
+        width: 90%;
+    }
+
+    #board {
+        width: 350px;
+        height: 350px;
+    }
+
+    #change-mode,
+    #restart-game {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    html,
+    body {
+        min-height: 565px;
+    }
+
+    #container {
+        padding-top: 140px;
+    }
+
+    #start-page {
+        font-size: 80px;
+        padding: 0 40px;
+    }
+    
+    #player-panel {
+        width: 90%;
+        height: 130px;
+    }
+
+    #board {
+        width: 330px;
+        height: 330px;
+    }
+
+    #change-mode,
+    #restart-game {
+        font-size: 4vh;
+    }
+}
+
+
+@media (max-width: 360px) {
+    html,
+    body {
+        min-height: 560px;
+    }
+
+    .animated-cross {
+        width: 0px;
+        height: 0px;
+    }
+
+    .animated-cross:after {
+        width: 80px;
+        height: 7px;
+    }
+      
+    .animated-cross:before {
+        width: 80px;
+        height: 7px;
+    }
+
+    @keyframes circle {
+        0% {
+          width: 0px;
+          height: 0px;
+          border: 6px solid rgba(255, 254, 101, .01);
+        }
+        
+        50% {
+          border: 6px solid rgba(255, 254, 101, .1);
+        }
+        
+        100% {
+          border: 6px solid rgba(255, 254, 101, 1);
+          visibility: visible;
+          width: 56px;
+          height: 56px;
+        }
+    }
+
+    #board {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 325px) {
+    html,
+    body {
+        min-height: 550px;
+    }
+
+    #container {
+        padding-top: 130px;
+    }
+
+    .animated-cross:after {
+        width: 76px;
+        height: 7px;
+    }
+      
+    .animated-cross:before {
+        width: 76px;
+        height: 7px;
+    }
+
+    @keyframes circle {
+        0% {
+          width: 0px;
+          height: 0px;
+          border: 6px solid rgba(255, 254, 101, .01);
+        }
+        
+        50% {
+          border: 6px solid rgba(255, 254, 101, .1);
+        }
+        
+        100% {
+          border: 6px solid rgba(255, 254, 101, 1);
+          visibility: visible;
+          width: 54px;
+          height: 54px;
+        }
+    }
+
+    #player-panel {
+        width: 90%;
+        height: 120px;
+    }
+
+    #board {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media (max-width: 300px) { 
+    html,
+    body {
+        min-height: 530px;
+    }
+
+    #container {
+        padding-top: 110px;
+    }
+
+    #player-panel {
+        width: 90%;
+        height: 110px;
+    }
+
+    #board {
+        width: 270px;
+        height: 270px;
+    }
+
+    #change-mode,
+    #restart-game {
+        font-size: 3.5vh;
+    }
+}
+
+@media (max-width: 290px) {
+    html,
+    body {
+        min-height: 520px;
+    }
+    #container {
+        padding-top: 90px;
+    }
+
+    #start-page {
+        font-size: 70px;
+        padding: 0 10px;
+    }
+
+    .animated-cross:after {
+        width: 70px;
+        height: 7px;
+    }
+      
+    .animated-cross:before {
+        width: 70px;
+        height: 7px;
+    }
+
+    @keyframes circle {
+        0% {
+          width: 0px;
+          height: 0px;
+          border: 6px solid rgba(255, 254, 101, .01);
+        }
+        
+        50% {
+          border: 6px solid rgba(255, 254, 101, .1);
+        }
+        
+        100% {
+          border: 6px solid rgba(255, 254, 101, 1);
+          visibility: visible;
+          width: 48px;
+          height: 48px;
+        }
+    }
+
+    #player-panel {
+        width: 90%;
+        height: 100px;
+    }
+
+    #board {
+        width: 250px;
+        height: 250px;
+    }
+
+}
+
+@media (max-width: 265px) {
+    html,
+    body {
+        min-height: 445px;
+    }
+
+    #board {
+        min-width: 235px;
+    }
+    .animated-cross:after {
+        width: 63px;
+        height: 6px;
+    }
+      
+    .animated-cross:before {
+        width: 63px;
+        height: 6px;
+    }
+
+    @keyframes circle {
+        0% {
+          width: 0px;
+          height: 0px;
+          border: 5px solid rgba(255, 254, 101, .01);
+        }
+        
+        50% {
+          border: 5px solid rgba(255, 254, 101, .1);
+        }
+        
+        100% {
+          border: 5px solid rgba(255, 254, 101, 1);
+          visibility: visible;
+          width: 43px;
+          height: 43px;
+        }
+    }
+
+    #player-panel {
+        width: 90%;
+        height: 100px;
+    }
+
+    #board {
+        width: 230px;
+        height: 230px;
+    }
+
+    #change-mode,
+    #restart-game {
+        font-size: 3.3vh;
+    }
+}
