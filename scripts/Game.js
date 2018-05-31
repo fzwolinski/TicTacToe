@@ -112,7 +112,7 @@ class Game {
                 elem.className = 'show-hide-restart-game';    
             } else {
                 this.hideRestartModeGameOption();
-                elem.className = '';
+                elem.removeAttribute('class');
             }
         }
     }
@@ -132,7 +132,7 @@ class Game {
       setTimeout(() => {
         document.getElementById('restart-game').className = 'noselect';
         document.getElementById('change-mode').className = 'noselect';
-      }, 900);
+      }, 300);
     }
   
     changeMode() {

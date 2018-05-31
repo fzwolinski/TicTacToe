@@ -111,12 +111,11 @@ body {
 
     .field:hover:after {
         background: unset;
-      }
-
+    }
       
     #restart-game:hover,
     #change-mode:hover {
-        background: #66661b;
+        background: #26374d;
     }
 
     .animated-cross:after {
@@ -172,7 +171,7 @@ body {
         padding: 0 10px;
         line-height: unset;
         border: 0;
-        background: #66661b;
+        background: #26374d;
         box-sizing: border-box;
         display:flex;
         justify-content:center;
