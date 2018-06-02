@@ -27,7 +27,7 @@ html {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  z-index: 5;
+  z-index: 3;
   background: #1a283a;
   font-size: 130px;
   color: #eeee68;
@@ -267,6 +267,7 @@ html {
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
+  z-index: 2;
 }
 
 #show-hide-restart-game:hover {
@@ -309,6 +310,7 @@ html {
   left: 50%;
   transform: translate(-50%, 0);
   background: #1d2d42;
+  z-index: 2;
 }
 
 #change-mode {
