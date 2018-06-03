@@ -440,7 +440,7 @@ body {
     #change-mode,
     #restart-game {
         width: 50%;
-        font-size: 5vh;
+        font-size: 4.5vh;
         height: 13%;
     }
 }
@@ -537,7 +537,7 @@ body {
 
     #change-mode,
     #restart-game {
-        font-size: 4vh;
+        font-size: 3.7vh;
     }
 }
 
@@ -660,7 +660,7 @@ body {
 
     #change-mode,
     #restart-game {
-        font-size: 3.5vh;
+        font-size: 3.2vh;
     }
 }
 
@@ -769,6 +769,6 @@ body {
 
     #change-mode,
     #restart-game {
-        font-size: 3.3vh;
+        font-size: 3.1vh;
     }
 }
