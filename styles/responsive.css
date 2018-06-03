@@ -181,11 +181,12 @@ body {
     #player-panel {
         left: 0px;
         font-size: 20vh;
+		color: #eeee68;
     }
 
     #change-mode {
-        border-left: 2px solid #FFFE20;
-        border-right: 2px solid #FFFE20;
+        border-left: 2px solid #FFD700;
+        border-right: 2px solid #FFD700;
         left: 50%;
         transform: translate(-50%, 0);
     }
@@ -414,6 +415,7 @@ body {
         top: 10px;
         left: 50%;
         transform: translate(-50%, 0);
+		color: #FFD700;
         bottom: unset;
         font-size: 100px;
         background: none;
